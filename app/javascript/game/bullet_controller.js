@@ -1,0 +1,3 @@
+class BulletController {}
+
+export { BulletController };
