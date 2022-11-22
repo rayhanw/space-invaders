@@ -3,7 +3,7 @@ class Player {
   leftPressed = false;
   shootPressed = false;
 
-  constructor(canvas, velocity, bulletController) {
+  constructor(canvas, velocity, bulletController, image) {
     this.canvas = canvas;
     this.velocity = velocity;
     this.bulletController = bulletController;
@@ -13,7 +13,7 @@ class Player {
     this.width = 50;
     this.height = 48;
     this.image = new Image();
-    this.image.src = "./images/player.png";
+    this.image.src = image;
 
     document.addEventListener("keydown", this.keyDown);
     document.addEventListener("keyup", this.keyUp);

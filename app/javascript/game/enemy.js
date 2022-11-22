@@ -1,5 +1,5 @@
 class Enemy {
-  constructor(x, y, imageNumber) {
+  constructor(x, y, image) {
     this.x = x;
     this.y = y;
 
@@ -7,7 +7,7 @@ class Enemy {
     this.height = 32;
 
     this.image = new Image();
-    this.image.src = `./images/enemy${imageNumber}.png`;
+    this.image.src = image;
   }
 
   draw(ctx) {
